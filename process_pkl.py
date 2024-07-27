@@ -31,7 +31,7 @@ with open(val_file_path, 'r') as file:
 
 val_file_names = [line.strip().split('/')[-1].split('.')[0] for line in val_lines if 'Test' in line]
 
-# 找出 val_file_names 中不存在于 xsub_val_list 的项
+# 找出 val_file_names 中不存在于 xview_val_list 的项
 val_files = [item for item in val_file_names if item not in xview_val_list]
 
 # 将不存在的项保存到新的 txt 文件中
